@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 10, 87, 131;
+  --background-end-rgb: 24, 161, 154;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 10, 87, 131;
+    --background-end-rgb: 24, 161, 154;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom right,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+} */
+:root {
+  --gradient-start-color: rgba(10, 87, 131, 1);
+  --gradient-end-color: rgba(24, 161, 154, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--gradient-start-color), var(--gradient-end-color));
+  background-size: 100% 200%; /* Adjust the values based on your preference */
+  /* Optional: Add an animation for a flowing effect */
+}
+
+@keyframes gradientFlow {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.custom-shape-divider-top-1704812727 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  aspect-ratio: 1600/800;
+    width: 100%;
+   
+}
